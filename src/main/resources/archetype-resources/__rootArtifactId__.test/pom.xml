@@ -10,7 +10,7 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>${rootArtifactId}.test</artifactId>
+	<artifactId>${groupId}.test</artifactId>
 	<groupId>${groupId}</groupId>
 	<packaging>eclipse-test-plugin</packaging>
 

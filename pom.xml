@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>ch.hsr.ifs.archetype</groupId>
-  <artifactId>cdt-plugin-archetype-archetype</artifactId>
+  <artifactId>cdt-plugin-archetype</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
-  <name>cdt-plugin-archetype-archetype</name>
+  <name>cdt-plugin-archetype</name>
 
   <build>
     <extensions>

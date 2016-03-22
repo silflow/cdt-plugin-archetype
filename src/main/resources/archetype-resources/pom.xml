@@ -93,7 +93,7 @@
           <target>
             <artifact>
               <groupId>${groupId}</groupId>
-              <artifactId>${artifactId}.target</artifactId>
+              <artifactId>${rootArtifactId}.target</artifactId>
               <version>${version}</version>
             </artifact>
           </target>

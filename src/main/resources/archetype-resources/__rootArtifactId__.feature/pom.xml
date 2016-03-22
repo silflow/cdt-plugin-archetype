@@ -11,7 +11,7 @@
 	</parent>
 
   <groupId>${groupId}</groupId>
-  <artifactId>${rootArtifactId}.feature</artifactId>
+  <artifactId>${groupId}.feature</artifactId>
 
 	<packaging>eclipse-feature</packaging>
 </project>

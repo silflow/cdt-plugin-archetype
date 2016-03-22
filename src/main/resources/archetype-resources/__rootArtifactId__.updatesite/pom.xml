@@ -10,7 +10,7 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-  <artifactId>${rootArtifactId}.updatesite</artifactId>
+  <artifactId>${groupId}.updatesite</artifactId>
 	<groupId>${groupId}</groupId>
   <packaging>eclipse-repository</packaging>
 </project>
