@@ -1,0 +1,12 @@
+//!KillAtEndOfScope
+//@.config
+markerPositions=7
+//@main.cpp
+int main() {
+	int* p;
+	{
+		int i = 0;
+		p = &i;
+	}
+	*p = 1;
+}

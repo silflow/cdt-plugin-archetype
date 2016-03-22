@@ -1,0 +1,44 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+  <extension point="org.eclipse.cdt.codan.core.checkers" id="org.eclipse.cdt.codan.core.categories">
+		<category id="${package}.problem" name="Problem Category"/>
+	</extension>
+	
+   <extension point="org.eclipse.ui.ide.markerResolution">
+		<markerResolutionGenerator
+   			class="org.eclipse.cdt.codan.internal.ui.CodanProblemMarkerResolutionGenerator"
+   			markerType="${package}.HelloWorldMarker">
+		</markerResolutionGenerator>
+   	</extension>
+     
+   	<extension name="HelloWorldMarker" point="org.eclipse.core.resources.markers" id="${package}.HelloWorldMarker">
+   		<super type="org.eclipse.cdt.codan.core.codanProblem"/>         
+   		<persistent value="true"/>
+   	</extension>
+   
+   	<extension
+         point="org.eclipse.cdt.codan.core.checkers">
+         <checker
+         	class="${package}.checkers.TestChecker"
+         	id="${package}.checkers.TestChecker"
+         	name = "Test wether or not I can Check stuff">
+         	
+         	<problem
+    			category="${package}.problem"
+    			defaultEnabled="true"
+				defaultSeverity="Warning"
+				description="Finds my problems and dispairs"
+				id="${package}.problem.SpecificProblem"
+				messagePattern="Found your Problem: {0}"
+				name="Just don't, dont't do that, Just really"
+				markerType="${package}.HelloWorldMarker">
+			</problem>
+		</checker>
+   	</extension>
+
+</plugin>
